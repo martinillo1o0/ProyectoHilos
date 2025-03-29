@@ -12,7 +12,6 @@ import Model.RunnableSimple;
  * @author marti
  */
 public class HilosR {
-
     public static void main(String[] args) throws InterruptedException {
         Thread main = Thread.currentThread();
         
@@ -53,7 +52,6 @@ public class HilosR {
         hilo4.join();
         hilo5.join();
         Thread.sleep(1000);
-         System.out.println("Continuacion del main "+Thread.currentThread());
-         
+         System.out.println("Continuacion del main "+Thread.currentThread());  
     }
 }

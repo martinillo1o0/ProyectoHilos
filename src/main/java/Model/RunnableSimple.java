@@ -14,7 +14,9 @@ import java.util.logging.Logger;
 public class RunnableSimple implements Runnable {
 
     private String nombre;
-
+    private boolean listo = false;
+    
+    
     public RunnableSimple(String nombre) {
         this.nombre = nombre;
     }
@@ -22,8 +24,6 @@ public class RunnableSimple implements Runnable {
     public String getNombre() {
         return nombre;
     }
-    
-   
     @Override
     public void run() {
        System.out.println("Se inicia el metodo :" + getNombre());
@@ -38,4 +38,8 @@ public class RunnableSimple implements Runnable {
         }
         System.out.println("hilo finalizado" + getNombre());
     }
+    
 }
+    
+    
+
