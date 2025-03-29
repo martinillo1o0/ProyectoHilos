@@ -10,3 +10,4 @@ public class EjemploProductorConsumidor {
         new Thread(new Consumidor(p)).start();
     }
 }
+///ola
